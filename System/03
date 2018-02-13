@@ -1,0 +1,3 @@
+Modify /etc/hostname to keep it permanent
+Update /etc/hosts, so local address(es) resolves with the new system name.
+Reload the network configuration
