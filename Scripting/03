@@ -1,2 +1,2 @@
 #!/bin/sh
-ls -lS $1
+du -sh $1/* | sort -h
