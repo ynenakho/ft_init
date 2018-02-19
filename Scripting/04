@@ -1,13 +1,9 @@
-#This file will send email localy, it is not set to be sending email to external Emails
-#For that to happen you have to reconfigure exim4. E.g. dpkg-reconfigure exim4-config and follow instructions
-#Also, note, that mail has to be installed.
-#Furthermore, mail service sends email via aliases, so when you place root as recipient check /etc/aliases to see which account will get it.
 #Command for crontab -e : 0 0 * * * /bin/sh $HOME/scripts/04 >> /var/log/crontab_script.log
 #Or command for /etc/crontab: 0 0 * * * root /bin/sh $HOME/scripts/04 >> /var/log/crontab_script.log
 #!/bin/sh
 changef="/etc/crontab"
 file="/var/log/crontab_change.log"
-sha_sum_o="Nothingness and abyss"
+sha_sum_o="Null"
 if [ -f "$file" ]
 then
 	sha_sum_o="$(cat $file)"
