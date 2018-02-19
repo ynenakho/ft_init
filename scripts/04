@@ -1,5 +1,4 @@
-#Command for crontab -e : 0 0 * * * /bin/sh $HOME/scripts/04 >> /var/log/crontab_script.log
-#Or command for /etc/crontab: 0 0 * * * root /bin/sh $HOME/scripts/04 >> /var/log/crontab_script.log
+#Command for crontab -e : 0 0 * * * /bin/sh $HOME/scripts/04
 #!/bin/sh
 changef="/etc/crontab"
 file="/var/log/crontab_change.log"
